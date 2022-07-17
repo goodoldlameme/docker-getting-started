@@ -74,7 +74,7 @@ https://docs.docker.com/storage/volumes/
 ]
 
 # Задание 6
-Приложение уже умеет работать c MySQL.
+Приложение уже умеет работать c MySQL версии не выше 5.
 Сделать так, чтобы приложение писало данные в MySQL.
 Приложение и база данных должны работать в одной сети.
 В контейнере mysql данные хранятся в /var/lib/mysql.
@@ -102,7 +102,7 @@ MYSQL_DB=todos // имя базы данных
 -v todo-mysql-data:/var/lib/mysql \
 -e MYSQL_ROOT_PASSWORD=secret \
 -e MYSQL_DATABASE=todos \
-mysql
+mysql:5
 
 >docker run -dp 3000:3000 \
 --network todo-app \
