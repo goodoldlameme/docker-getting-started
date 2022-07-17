@@ -27,7 +27,7 @@ https://docs.docker.com/config/containers/container-networking/#published
 https://docs.docker.com/storage/volumes/
 
 # Задание 6
-Приложение уже умеет работать c MySQL.
+Приложение уже умеет работать c MySQL версии не выше 5.
 Сделать так, чтобы приложение писало данные в MySQL.
 Приложение и база данных должны работать в одной сети.
 В контейнере mysql данные хранятся в /var/lib/mysql.
